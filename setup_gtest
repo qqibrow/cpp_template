@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ ! -d dep/gtest-1.7.0 ]; then
+    curl -o dep/gtest.tar.gz https://googletest.googlecode.com/files/gtest-1.7.0.zip
+    tar -zxvf dep/gtest.tar.gz -C dep/
+fi
+
