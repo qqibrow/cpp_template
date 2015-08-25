@@ -6,11 +6,8 @@ c++ project template, incldue:
 
 # Install
 ```
-git clone https://github.com/qqibrow/cpp_template.git
-cd cpp_template
-./setup_gtest
+git clone https://github.com/qqibrow/cpp_template.git && cd cpp_template
+./setup_gtest # download gtest
 mkdir mybuild && cd mybuild
-cmake ..
-make
-make test # or ./runUnitTests
+cmake .. && make && make test # or ./runUnitTests in the last step
 ```
