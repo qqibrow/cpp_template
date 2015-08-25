@@ -18,3 +18,6 @@ mkdir mybuild && cd mybuild
 cmake .. && make && make test # or ./runUnitTests in the last step
 ```
 Tested in Mac, Ubuntu and RHEL6
+
+# License
+MIT
