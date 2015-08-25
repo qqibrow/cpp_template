@@ -1,4 +1,7 @@
-# cpp_template
+cpp_template
+============
+[![Build Status](https://travis-ci.org/qqibrow/cpp_template.svg?branch=master)](https://travis-ci.org/qqibrow/cpp_template)
+
 c++ project template, incldue:
 
   * project skeleton using cmake
