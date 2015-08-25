@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 2.8)
 
 # setup variables that across all the project. Change with 'cmake -Dmyvarname=ON'
 set(PROJECT_NAME ProjectTemplate)
@@ -6,7 +6,11 @@ set(LIBRARY_NAME DummyLibrary)
 
 # Options. Turn on with 'cmake -Dmyvarname=ON'.
 #option(test "Build all tests." OFF) # Makes boolean 'test' available.
-set(CMAKE_CXX_FLAGS "-g -Wall -std=c++11 -stdlib=libc++")
+if(APPLE)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -std=c++11 -stdlib=libc++")
+elseif(UNIX)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -Wall -pthread -std=c++11")
+endif()
 
 project(${PROJECT_NAME} )
 
