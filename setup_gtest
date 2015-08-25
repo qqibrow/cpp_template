@@ -2,7 +2,7 @@
 
 if [ ! -d dep/gtest-1.7.0 ]; then
     mkdir dep
-    curl -o dep/gtest.tar.gz https://googletest.googlecode.com/files/gtest-1.7.0.zip
-    tar -zxvf dep/gtest.tar.gz -C dep/
+    curl -o dep/gtest.zip https://googletest.googlecode.com/files/gtest-1.7.0.zip
+    unzip dep/gtest.zip -d dep/
 fi
 
